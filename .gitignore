@@ -1,0 +1,6 @@
+.idea/
+.data/
+.dataset/
+cmake-build-debug/
+cmake-build-release/
+build/
