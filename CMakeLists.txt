@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 4.2)
 project(CPP_algorithms)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
@@ -31,3 +31,10 @@ add_executable(queue_demo 04_data_structures/03_queue.cpp)
 add_executable(binary_tree_demo 04_data_structures/04_binary_tree.cpp)
 add_executable(heap_demo 04_data_structures/05_heap.cpp)
 
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+include(LibTorchSetup)
+
+add_libtorch_executable(
+        libtorch_cuda_check
+        05_libtorch/01_libtorch_cuda_check.cpp
+)
