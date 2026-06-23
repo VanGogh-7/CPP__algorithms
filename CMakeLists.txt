@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 4.2)
 project(CPP_algorithms)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+add_executable(main main.cpp)
 
 add_executable(hello 01_cpp_basics/01_hello.cpp)
 add_executable(variables 01_cpp_basics/02_variables.cpp)
